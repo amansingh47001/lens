@@ -20,7 +20,7 @@ export default function TextInput({ name, label, control, desc, placeholder }) {
           <FormLabel>{label}</FormLabel>
           <FormDescription>{desc}</FormDescription>
           <FormControl>
-            <Input className="bg-white dark:bg-neutral-800" placeholder={placeholder} {...field} />
+            <Input className="bg-white dark:bg-neutral-900" placeholder={placeholder} {...field} />
           </FormControl>
           <FormMessage />
         </FormItem>

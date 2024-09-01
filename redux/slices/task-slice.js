@@ -11,7 +11,7 @@ const tasksSlice = createSlice({
         title: action.payload.title,
         description: action.payload.description,
         priority: action.payload.priority,
-        dueDate: action.payload.dueDate,
+        dueDate: new Date(action.payload.dueDate).toISOString(),
         location: action.payload.location,
       });
     },
@@ -23,4 +23,5 @@ const tasksSlice = createSlice({
 });
 
 export const { taskAdded, taskToggled } = tasksSlice.actions;
+
 export default tasksSlice.reducer;

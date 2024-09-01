@@ -21,7 +21,7 @@ import ThemeToggle from "@/components/theme/theme-toggle";
 export default function page({ children }) {
   return (
     <div className="flex min-h-screen w-full flex-col bg-muted/40">
-      <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r dark:border-neutral-700 sm:flex">
+      <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r dark:bg-neutral-950 dark:border-neutral-700 sm:flex">
         <nav className="flex flex-col items-center gap-4 px-2 py-4">
           <Link
             href="#"
